@@ -8,7 +8,7 @@ targets : prerequisites ; recipe
     recipe
         …
 ```
-  - meaning: prerequirites 가 targets 보다 recent 하면 recipe 들을 수행하라
+  - 의미 : prerequirites 가 targets 보다 recent 하면 recipe 들을 수행하라
   
   - target
     - file name
@@ -27,5 +27,11 @@ targets : prerequisites ; recipe
     - ```$(변수)```는 이 때 변수의 내용으로 치환
     - ```$$(변수)```는 ```$(변수)```로 치환, 이후 2nd phase에서 변수의 내용으로 치환됨
   - 2nd phase: 실행될 target 을 위한 rule 들을 실행
-  
+
+- Filename wildcard
+  - ```objects = *.o``` 인  경우```$(objects)``` 는 string ```*.o``` 를 뜻함
+    - recipe에 사용되는 ```$(objects)``` 는 string ```*.o``` 를 뜻함. 실제 expansion은 sh 에 의해 일어남.
+    - 굳이 expansion 하고 싶으면 ```objects := $(wildcard *.o)``` 라고 하면 됨
+  - ``` build: $(objects)``` 라고 prerequisite 에 사용하면 실제 파일이름으로 expansion됨
+  
 
