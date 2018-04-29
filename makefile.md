@@ -128,29 +128,59 @@ Excerpted from [GNU Make](https://www.gnu.org/software/make/manual/html_node/)
     clean:
         -rm -f *.o
     ```
-    - recursive make (makefile 에서 make를 다시 호출하는 것)
-        ```
-        subsystem:
-            cd subdir && $(MAKE)
-        ```
-        - ```$(MAKE)```는 make의 절대경로로 치환됨
-        - 호출된 make는 호출한 make의 variable을 모름. 전달하려면```export``` 해줄 수 있음.
-        ```
-        export MY_EMAIL
-        ```
-        ```
-        export MY_EMAIL = abc@def.com
-        ```
-        ```
-        unexport MY_EMAIL
-        ```
-        - 모든 variable이 export 되어야 한다면. (```unexport``` 써서 제외할 변수들을 지정할 수는 있음)
-        ```
-        export 
-        ```
-        
-        
+- recursive make (makefile 에서 make를 다시 호출하는 것)
+    ```
+    subsystem:
+        cd subdir && $(MAKE)
+    ```
+    - ```$(MAKE)```는 make의 절대경로로 치환됨
+    - 호출된 make는 호출한 make의 variable을 모름. 전달하려면```export``` 해줄 수 있음.
+    ```
+    export MY_EMAIL
+    ```
+    ```
+    export MY_EMAIL = abc@def.com
+    ```
+    ```
+    unexport MY_EMAIL
+    ```
+    - 모든 variable이 export 되어야 한다면. (```unexport``` 써서 제외할 변수들을 지정할 수는 있음)
+    ```
+    export 
+    ```
+- Canned Recipe
+    - 일종의 C의 매크로
+    ```
+    define run-yacc =
+    yacc $(firstword $^)
+    mv y.tab.c $@
+    endef
 
+    foo.c : foo.y
+        $(run-yacc)    
+
+    bar.c : bar.y
+        @$(run-yacc)    <-- run-yacc의 라인들이 출력되지 않음
+        
+    ```
+- variable의 종류
+    - *recursively expanded* variable        
+        - expansion 은 substitution 시에 일어남
+        ```
+        foo = $(bar)
+        bar = $(ugh)
+        ugh = Huh?
+
+        all:;echo $(foo)    --> "Huh?" 출력
+        ```
+    - *Simply expanded* variables (```:=```, ```::=``` 사용)
+        - 그 변수가 write되는 상황에 value 가 결정
+        - 아래에서 y 는 "foo bar"
+        ```
+        x := foo
+        y := $(x) bar
+        x := later        
+        ```
     
-
+start from https://www.gnu.org/software/make/manual/html_node/Flavors.html#Flavors
 
