@@ -93,3 +93,35 @@ pwd = /home/volumio/study. Goint to subshell. cd /
 (in subshell) pwd = /
 pwd = /home/volumio/study
 ```
+
+## `find`
+- `find -type f` and `find -type d`
+- `find -ls`
+
+```
+volumio@rabbit-music-player:~/study$ find /usr/lib -type f -print | wc -l
+5141
+volumio@rabbit-music-player:~/study$ find /usr/lib -type d -print | wc -l
+497
+volumio@rabbit-music-player:~/study$ find /usr/lib -type f -name "libc*.so" -ls
+ 15332    6 -rw-r--r--   1 root     root         5452 Mar 29  2018 /usr/lib/i386-linux-gnu/openssl-1.0.0/engines/libcapi.so
+ 15333   23 -rw-r--r--   1 root     root        22832 Mar 29  2018 /usr/lib/i386-linux-gnu/openssl-1.0.0/engines/libchil.so
+ 15334   23 -rw-r--r--   1 root     root        22696 Mar 29  2018 /usr/lib/i386-linux-gnu/openssl-1.0.0/engines/libcswift.so
+```
+
+- `find -exec cmd .. {} ..`
+  - use `\;` to run cmd for each item found
+  - use `+` to run cmd for whole items
+
+```
+gnu/openssl-1.0.0/engines/libcswift.so
+volumio@rabbit-music-player:~/study$ find /usr/lib -type f -name "libc*.so" -exec echo '{}' \;
+/usr/lib/i386-linux-gnu/openssl-1.0.0/engines/libcapi.so
+/usr/lib/i386-linux-gnu/openssl-1.0.0/engines/libchil.so
+/usr/lib/i386-linux-gnu/openssl-1.0.0/engines/libcswift.so
+
+volumio@rabbit-music-player:~/study$ find /usr/lib -type f -name "libc*.so" -exec echo '{}' +
+/usr/lib/i386-linux-gnu/openssl-1.0.0/engines/libcapi.so /usr/lib/i386-linux-gnu/openssl-1.0.0/engines/libchil.so /usr/lib/i386-linux-```
+
+
+
