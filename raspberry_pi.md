@@ -60,3 +60,27 @@ control-X -> Y -> Enter
 sudo apt-get update
 sudo apt-get install upmpdcli
 sudo apt-get install upmpdcli-tidal
+```
+
+## 문제점 해결
+### BubbleUPnP 에서는 보여지고 Play도 되는데 소리가 안난다.
+- `aplay -l`을 실행해본다. 나의 경우는 아래와 같았다. USB Audio가 `Card 1: .. device 0: ...` 이라고 되어 있다. 이 경우 mpd의 설정파일에 `hw:1,0`이라고 되어 있어야 한다.
+
+```
+# aplay -1
+card 0: ALSA [bcm2835 ALSA], device 1: bcm2835 IEC958/HDMI [bcm2835 IEC958/HDMI]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 1: X20 [XMOS USB Audio 2.0], device 0: USB Audio [USB Audio]
+  Subdevices: 0/1
+  Subdevice #0: subdevice #0
+```
+
+- mpd.conf 수정
+```
+audio_output {
+        type            "alsa"
+        name            "My ALSA Device"
+        device          "hw:1,0"        # 이 부분을 hw:1,0 으로 해주면 됨
+ 
+```
