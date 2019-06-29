@@ -54,7 +54,6 @@ sudo nano /etc/apt/sources.list.d/upmpdcli.list
 아래 두줄 입력
 deb http://www.lesbonscomptes.com/upmpdcli/downloads/raspbian/ stretch main
 deb-src http://www.lesbonscomptes.com/upmpdcli/downloads/raspbian/ stretch main
-
 control-X -> Y -> Enter
 
 sudo apt-get update
@@ -78,9 +77,18 @@ card 1: X20 [XMOS USB Audio 2.0], device 0: USB Audio [USB Audio]
 
 - mpd.conf 수정
 ```
+$ sudo nano /etc/mpd.conf
+
+아래 부분을 찾아서 device 부분을 아래처럼 고친다.
+
 audio_output {
         type            "alsa"
         name            "My ALSA Device"
         device          "hw:1,0"        # 이 부분을 hw:1,0 으로 해주면 됨
  
+```
+
+- 수정 후 mpd 다시 시작
+```
+ $ systemctl restart mpd
 ```
