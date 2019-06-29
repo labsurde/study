@@ -6,11 +6,10 @@ https://downloads.raspberrypi.org/raspbian_full/images/raspbian_full-2019-04-09/
 - lite 버젼은 뭔가 잘 안됨 (설치되나 인식안됨)
 - buster 버젼은 upmpdcli 설치방법이 아직 없음
 
-### setting
+### setting 1
 ```
-passwd pi # 보안을 위해 암호 바꾸기
-sudo apt-get update
-sudo apt-get upgrade
+부팅 후 국가선택
+시스템 자동 업데이트 후 리부팅
 ```
 
 ### ssh 활성화 
@@ -25,6 +24,12 @@ sudo service ssh start
    $ cd /boot
    $ sudo touch ssh
    $ sudo reboot
+```
+
+### setting 2
+```
+시스템 메뉴의 라즈베리 파이 설정 들어가서 부팅을 desktop 에서 CLI로 바꿈
+리부트
 ```
 
 ### mpd
@@ -44,9 +49,14 @@ gpg --keyserver pool.sks-keyservers.net --recv-key F8E3347256922A8AE767605B7808C
 
 #### 
 ```
-sudo cat > /etc/apt/sources.list.d/upmpdcli.list
+sudo nano /etc/apt/sources.list.d/upmpdcli.list
+
+아래 두줄 입력
 deb http://www.lesbonscomptes.com/upmpdcli/downloads/raspbian/ stretch main
 deb-src http://www.lesbonscomptes.com/upmpdcli/downloads/raspbian/ stretch main
 
+control-X -> Y -> Enter
+
+sudo apt-get update
 sudo apt-get install upmpdcli
 sudo apt-get install upmpdcli-tidal
