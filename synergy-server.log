@@ -1,0 +1,47 @@
+[2019-09-27T10:30:25] INFO: starting server
+[2019-09-27T10:30:25] INFO: config file: /tmp/Synergy.h13297
+[2019-09-27T10:30:25] INFO: log level: INFO
+[2019-09-27T10:30:25] NOTE: started server, waiting for clients
+[2019-09-27T10:30:25] NOTE: accepted client connection
+[2019-09-27T10:30:25] NOTE: client "hyunsik-yoon01" has connected
+[2019-09-27T10:30:37] INFO: switch from "labs" to "hyunsik-yoon01" at 1919,440
+[2019-09-27T10:30:37] INFO: leaving screen
+[2019-09-27T10:30:37] INFO: screen "labs" updated clipboard 1
+[2019-09-27T10:30:49] INFO: switch from "hyunsik-yoon01" to "labs" at 64,67
+[2019-09-27T10:30:49] INFO: entering screen
+[2019-09-27T10:30:49] INFO: switch from "labs" to "hyunsik-yoon01" at 1919,10
+[2019-09-27T10:30:49] INFO: leaving screen
+[2019-09-27T10:32:18] NOTE: client "hyunsik-yoon01" has disconnected
+[2019-09-27T10:32:18] INFO: jump from "hyunsik-yoon01" to "labs" at 1280,720
+[2019-09-27T10:32:18] INFO: entering screen
+[2019-09-27T10:32:29] NOTE: accepted client connection
+[2019-09-27T10:32:29] NOTE: client "hyunsik-yoon01" has connected
+[2019-09-27T10:32:41] NOTE: client "hyunsik-yoon01" has disconnected
+[2019-09-27T10:32:45] NOTE: accepted client connection
+[2019-09-27T10:32:45] NOTE: client "hyunsik-yoon01" has connected
+[2019-09-27T10:32:51] WARNING: error writing to client "hyunsik-yoon01"
+[2019-09-27T10:32:52] NOTE: accepted client connection
+[2019-09-27T10:32:52] NOTE: client "hyunsik-yoon01" has connected
+[2019-09-27T10:33:01] WARNING: error writing to client "hyunsik-yoon01"
+[2019-09-27T10:33:03] NOTE: accepted client connection
+[2019-09-27T10:33:03] NOTE: client "hyunsik-yoon01" has connected
+[2019-09-27T10:39:28] NOTE: client "hyunsik-yoon01" has disconnected
+[2019-09-27T10:40:15] NOTE: accepted client connection
+[2019-09-27T10:40:15] NOTE: client "hyunsik-yoon01" has connected
+[2019-09-27T12:22:06] INFO: switch from "labs" to "hyunsik-yoon01" at 1919,389
+[2019-09-27T12:22:06] INFO: leaving screen
+[2019-09-27T12:22:06] INFO: screen "labs" updated clipboard 0
+[2019-09-27T12:22:06] INFO: screen "labs" updated clipboard 1
+[2019-09-27T12:22:30] NOTE: client "hyunsik-yoon01" has disconnected
+[2019-09-27T12:22:30] INFO: jump from "hyunsik-yoon01" to "labs" at 1280,720
+[2019-09-27T12:22:30] INFO: entering screen
+[2019-09-27T12:22:34] NOTE: accepted client connection
+[2019-09-27T12:22:34] NOTE: client "hyunsik-yoon01" has connected
+[2019-09-27T12:23:10] INFO: switch from "labs" to "hyunsik-yoon01" at 1919,445
+[2019-09-27T12:23:10] INFO: leaving screen
+[2019-09-27T12:23:50] INFO: screen "hyunsik-yoon01" grabbed clipboard 0 from "labs"
+[2019-09-27T12:23:50] INFO: screen "hyunsik-yoon01" grabbed clipboard 1 from "labs"
+[2019-09-27T12:23:51] INFO: switch from "hyunsik-yoon01" to "labs" at 46,225
+[2019-09-27T12:23:51] INFO: entering screen
+[2019-09-27T12:23:52] INFO: screen "hyunsik-yoon01" updated clipboard 0
+[2019-09-27T12:23:52] INFO: screen "hyunsik-yoon01" updated clipboard 1
