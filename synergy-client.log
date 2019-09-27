@@ -1,0 +1,50 @@
+[2019-09-27T12:20:41] INFO: connecting to service...
+[2019-09-27T12:20:45] INFO: connection established
+[2019-09-27T10:38:09] INFO: using last known command: "C:/Program Files/Synergy/synergyc.exe" -f --no-tray --debug INFO --name hyunsik-yoon01 --ipc --stop-on-desk-switch --enable-drag-drop --profile-dir "C:\Users\hyunsik.yoon\AppData\Local" 10.113.221.155:24800
+[2019-09-27T10:38:09] INFO: service command updated
+[2019-09-27T10:38:09] ERROR: could not get session id for process id 16004
+[2019-09-27T10:38:09] ERROR: could not get session id for process id 16008
+[2019-09-27T10:38:10] INFO: starting new process
+[2019-09-27T10:38:12] INFO: activeDesktop:Winlogon
+[2019-09-27T10:38:12] ERROR: could not get session id for process id 16004
+[2019-09-27T10:38:12] ERROR: could not get session id for process id 16008
+[2019-09-27T10:38:12] INFO: starting new process
+[2019-09-27T10:38:13] INFO: drag and drop enabled
+[2019-09-27T10:38:13] NOTE: started client
+[2019-09-27T10:38:13] NOTE: connecting to '10.113.221.155': 10.113.221.155:24800
+[2019-09-27T10:38:13] INFO: service status: active
+[2019-09-27T10:38:13] NOTE: connected to server
+[2019-09-27T12:20:05] INFO: entering screen
+[2019-09-27T12:20:05] INFO: clipboard was updated
+[2019-09-27T12:20:05] INFO: clipboard was updated
+[2019-09-27T12:20:28] INFO: leaving screen
+[2019-09-27T12:20:28] NOTE: stopped client
+[2019-09-27T12:20:29] WARNING: detected application not running, pid=6308
+[2019-09-27T12:20:30] INFO: backing off, wait=2s, failures=1
+[2019-09-27T12:20:32] ERROR: could not get session id for process id 16004
+[2019-09-27T12:20:32] ERROR: could not get session id for process id 16008
+[2019-09-27T12:20:32] ERROR: could not get session id for process id 16012
+[2019-09-27T12:20:32] ERROR: could not get session id for process id 16016
+[2019-09-27T12:20:32] ERROR: could not get session id for process id 16020
+[2019-09-27T12:20:32] ERROR: could not get session id for process id 16024
+[2019-09-27T12:20:32] ERROR: could not get session id for process id 16028
+[2019-09-27T12:20:32] INFO: starting new process
+[2019-09-27T12:20:32] INFO: activeDesktop:Default
+[2019-09-27T12:20:32] ERROR: could not get session id for process id 16004
+[2019-09-27T12:20:32] ERROR: could not get session id for process id 16008
+[2019-09-27T12:20:32] ERROR: could not get session id for process id 16012
+[2019-09-27T12:20:32] ERROR: could not get session id for process id 16016
+[2019-09-27T12:20:32] ERROR: could not get session id for process id 16020
+[2019-09-27T12:20:32] ERROR: could not get session id for process id 16024
+[2019-09-27T12:20:32] ERROR: could not get session id for process id 16028
+[2019-09-27T12:20:32] INFO: starting new process
+[2019-09-27T12:20:33] INFO: drag and drop enabled
+[2019-09-27T12:20:33] NOTE: started client
+[2019-09-27T12:20:33] NOTE: connecting to '10.113.221.155': 10.113.221.155:24800
+[2019-09-27T12:20:33] INFO: service status: active
+[2019-09-27T12:20:33] NOTE: connected to server
+[2019-09-27T12:20:45] INFO: service status: active
+[2019-09-27T12:21:08] INFO: entering screen
+[2019-09-27T12:21:08] INFO: clipboard was updated
+[2019-09-27T12:21:08] INFO: clipboard was updated
+[2019-09-27T12:21:47] INFO: found key in group 0
