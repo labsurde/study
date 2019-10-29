@@ -100,5 +100,7 @@ audio_output {
 ```
 
 ## how to add hiberry digi+ HAT
-- https://www.hifiberry.com/docs/software/configuring-linux-3-18-x/
-- https://support.hifiberry.com/hc/en-us/community/posts/115003307869-Rasbpian-MPD-Hifiberry-Digi
+- board I bought: https://www.aliexpress.com/item/32952377023.html?spm=a2g0s.9042311.0.0.7d304c4dV4wXHS
+- follow instructions:
+  - https://www.hifiberry.com/docs/software/configuring-linux-3-18-x/
+  - https://support.hifiberry.com/hc/en-us/community/posts/115003307869-Rasbpian-MPD-Hifiberry-Digi
