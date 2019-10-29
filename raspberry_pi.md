@@ -98,3 +98,7 @@ audio_output {
 ```
  $ systemctl restart mpd
 ```
+
+## how to add hiberry digi+ HAT
+- https://www.hifiberry.com/docs/software/configuring-linux-3-18-x/
+- https://support.hifiberry.com/hc/en-us/community/posts/115003307869-Rasbpian-MPD-Hifiberry-Digi
